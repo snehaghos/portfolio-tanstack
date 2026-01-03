@@ -1,0 +1,11 @@
+{
+  "categories": ["All", "Photo", "Video", "Music", "Design"],
+  "items": [
+    { "title": "Daylight Entrance", "category": "Photo", "image": "/images/fornowpt.png", "icon": "ImageIcon" },
+    { "title": "Minimalist Design", "category": "Design", "image": "/images/taxCarousal.jpg", "icon": "ImageIcon" },
+    { "title": "Ennio Morricone", "category": "Music", "image": "/images/taxyaarLogo.png", "icon": "Music" },
+    { "title": "Street Photography", "category": "Photo", "image": "/images/fornowpt.png", "icon": "ImageIcon" },
+    { "title": "Modern Architecture", "category": "Design", "image": "/images/taxCarousal.jpg", "icon": "ImageIcon" },
+    { "title": "Nature Wonders", "category": "Photo", "image": "/images/taxyaarLogo.png", "icon": "ImageIcon" }
+  ]
+}
