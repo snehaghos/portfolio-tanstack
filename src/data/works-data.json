@@ -1,11 +1,11 @@
 {
   "categories": ["All", "Photo", "Video", "Music", "Design"],
   "items": [
-    { "title": "Daylight Entrance", "category": "Photo", "image": "/images/fornowpt.png", "icon": "ImageIcon" },
-    { "title": "Minimalist Design", "category": "Design", "image": "/images/taxCarousal.jpg", "icon": "ImageIcon" },
-    { "title": "Ennio Morricone", "category": "Music", "image": "/images/taxyaarLogo.png", "icon": "Music" },
-    { "title": "Street Photography", "category": "Photo", "image": "/images/fornowpt.png", "icon": "ImageIcon" },
-    { "title": "Modern Architecture", "category": "Design", "image": "/images/taxCarousal.jpg", "icon": "ImageIcon" },
-    { "title": "Nature Wonders", "category": "Photo", "image": "/images/taxyaarLogo.png", "icon": "ImageIcon" }
+    { "title": "Daylight Entrance", "category": "Photo", "image": "/images/work1.png", "icon": "ImageIcon" },
+    { "title": "Minimalist Design", "category": "Design", "image": "/images/work2.png", "icon": "ImageIcon" },
+    { "title": "Ennio Morricone", "category": "Music", "image": "/images/work3.png", "icon": "Music" },
+    { "title": "Street Photography", "category": "Photo", "image": "/images/work4.jpg", "icon": "ImageIcon" },
+    { "title": "Modern Architecture", "category": "Design", "image": "/images/work5.png", "icon": "ImageIcon" },
+    { "title": "Nature Wonders", "category": "Photo", "image": "/images/work6.jpg", "icon": "ImageIcon" }
   ]
 }

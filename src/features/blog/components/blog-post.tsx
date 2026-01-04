@@ -71,7 +71,6 @@ export function BlogPostDetail({ post, onBack }: BlogPostProps) {
           </div>
         )}
 
-        {/* Share Section */}
         <div className="space-y-2 sm:space-y-3 pt-4 sm:pt-6 border-t border-border">
           <div className="flex items-center gap-3 sm:gap-4">
             <span className="text-xs sm:text-sm font-semibold text-foreground">Share:</span>

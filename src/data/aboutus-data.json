@@ -58,19 +58,19 @@
       "quote": "Working with Ryan was a pleasure. Great web designer, quick communicator, and always delivers high-quality work.",
       "author": "Helen Floyd",
       "role": "Art Director",
-      "avatar": "/professional-woman-portrait.png"
+      "avatar": "/images/professional-woman-portrait.png"
     },
     {
       "quote": "Ryan is an amazing developer. He understood our requirements perfectly and delivered exceptional results on time.",
       "author": "Paul Trueman",
       "role": "Creative Director",
-      "avatar": "/professional-man-portrait.png"
+      "avatar": "/images/professional-man-portrait.png"
     }
   ],
   "clients": [
-    { "name": "Google", "logo": "/google-logo.png" },
-    { "name": "Envato", "logo": "/envato-logo.jpg" },
-    { "name": "Themeforest", "logo": "/themeforest-logo.jpg" },
-    { "name": "Videohive", "logo": "/videohive-logo.jpg" }
+    { "name": "Google", "logo": "/images/google-logo.png" },
+    { "name": "Envato", "logo": "/images/envato-logo.png" },
+    { "name": "Themeforest", "logo": "/images/themeforest-logo.jpg" },
+    { "name": "Videohive", "logo": "/images/videohive-logo.jpg" }
   ]
 }
