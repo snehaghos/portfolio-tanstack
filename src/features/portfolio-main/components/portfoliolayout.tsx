@@ -67,7 +67,7 @@ export function PortfolioLayout() {
         onTabChange={setActiveTab}
       />
       <div className="flex flex-col items-center lg:flex-row gap-0 max-w-6xl w-full lg:h-[600px] animate-in fade-in duration-1000 relative z-10">
-        {/* Mobile Menu Button */}
+        {/* mob menu */}
         <div className="md:hidden fixed top-4 left-4 z-[100]">
           <button
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}

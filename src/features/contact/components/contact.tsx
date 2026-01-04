@@ -52,7 +52,7 @@ export function ContactSection() {
         </div>
       </div>
 
-      {/* Contact Form Section */}
+      {/* cnt form section */}
       <div className="space-y-6 sm:space-y-8 pt-6 sm:pt-8">
         <h3 className="text-lg sm:text-xl font-bold">
           <span className="text-[#78cc6d]">Contact</span> <span className="text-black">Form</span>

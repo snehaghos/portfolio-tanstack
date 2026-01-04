@@ -32,13 +32,13 @@ export function WorksSection() {
         item={selectedItem} 
       />
 
-      {/* Header Section */}
+
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 sm:gap-8 pb-4 sm:pb-6">
         <h2 className="section-heading tracking-tight text-3xl sm:text-4xl">
           <span className="text-[#78cc6d]">Recent</span> <span className="text-black">Works</span>
         </h2>
 
-        {/* Filter Buttons */}
+    \
         <div className="flex flex-wrap gap-4 sm:gap-8">
           {categories.map((cat) => (
             <button
@@ -54,16 +54,13 @@ export function WorksSection() {
         </div>
       </div>
 
-      {/* Works Grid - 2 Column Gallery Layout on md+, 1 Column on mobile */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-b border-border">
         {filteredItems.map((item, i) => (
           <div
             key={i}
             className={`${i % 2 === 0 ? "md:border-r" : ""} p-0`}
           >
-            {/* Work Item */}
             <div className="p-6 flex flex-col gap-4 h-full">
-              {/* Image with Icon Overlay - Keep Natural Aspect Ratio */}
               <div
                 onClick={() => setSelectedItem(item)}
                 className="group relative overflow-hidden bg-gray-100 cursor-pointer w-full"
@@ -73,10 +70,8 @@ export function WorksSection() {
                   alt={item.title}
                   className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-110"
                 />
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                 
-                {/* Icon */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
                     <item.icon className="w-6 h-6" />
@@ -84,7 +79,6 @@ export function WorksSection() {
                 </div>
               </div>
 
-              {/* Description */}
               <div className="text-center">
                 <h3 className="value-text mb-1">{item.title}</h3>
                 <p className="label-text text-center">{item.category}</p>
