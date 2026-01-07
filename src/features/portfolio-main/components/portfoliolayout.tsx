@@ -1,5 +1,6 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearch } from '@tanstack/react-router'
 import { Menu } from 'lucide-react'
 import HomePage from './HomePage'
 import AboutSection from '@/features/aboutus/components/aboutus'
@@ -10,8 +11,15 @@ import { WorksSection } from '@/features/works/components/works'
 import { BlogSection } from '@/features/blog/components/blog'
 import { ContactSection } from '@/features/contact/components/contact'
 export function PortfolioLayout() {
-  const [activeTab, setActiveTab] = useState('ABOUT') 
+  const search = useSearch({ from: '/' }) as { tab?: string }
+  const [activeTab, setActiveTab] = useState('ABOUT')
   const [isSidebarOpen, setIsSidebarOpen] = useState(false) 
+
+  useEffect(() => {
+    if (search?.tab) {
+      setActiveTab(search.tab)
+    }
+  }, [search?.tab]) 
 
   return (
     <div className="min-h-screen bg-[#78cc6d] flex items-center justify-center p-3 sm:p-4 md:p-6 lg:p-8 lg:pl-24 lg:pr-8 transition-all duration-500 relative overflow-hidden">
@@ -68,7 +76,7 @@ export function PortfolioLayout() {
       />
       <div className="flex flex-col items-center lg:flex-row gap-0 max-w-6xl w-full lg:h-[600px] animate-in fade-in duration-1000 relative z-10">
         {/* mob menu */}
-        <div className="md:hidden fixed top-4 left-4 z-[100]">
+        <div className="md:hidden fixed top-4 left-4 z-100">
           <button
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             className="p-3 bg-white rounded-lg shadow-lg hover:text-primary transition-colors flex items-center justify-center"

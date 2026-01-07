@@ -33,13 +33,13 @@ export function WorksSection() {
       />
 
 
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 sm:gap-8 pb-4 sm:pb-6">
+      <div className="flex flex-col gap-4 sm:gap-6">
         <h2 className="section-heading tracking-tight text-3xl sm:text-4xl">
           <span className="text-[#78cc6d]">Recent</span> <span className="text-black">Works</span>
         </h2>
 
-    \
-        <div className="flex flex-wrap gap-4 sm:gap-8">
+    
+        <div className="flex flex-wrap gap-4 sm:gap-6">
           {categories.map((cat) => (
             <button
               key={cat}

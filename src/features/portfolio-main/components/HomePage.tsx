@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { useNavigate } from '@tanstack/react-router'
 import {
   Github,
   Twitter,
@@ -9,6 +10,7 @@ import {
 } from 'lucide-react'
 
 export default function HomePage() {
+  const navigate = useNavigate()
   const [subtitleIndex, setSubtitleIndex] = useState(0)
   const subtitles = ['Blogger', 'Freelancer', 'Web Designer', 'Photographer']
 
@@ -82,7 +84,10 @@ export default function HomePage() {
           <span className="relative z-10">Download CV</span>
           <div className="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
         </button>
-        <button className="flex-1 font-semibold uppercase tracking-[0.15em] text-[9px] sm:text-[11px] text-foreground hover:text-primary transition-all group relative overflow-hidden">
+        <button 
+          onClick={() => navigate({ to: "/", search: { tab: "CONTACT" } })}
+          className="flex-1 font-semibold uppercase tracking-[0.15em] text-[9px] sm:text-[11px] text-foreground hover:text-primary transition-all group relative overflow-hidden"
+        >
           <span className="relative z-10">Contact Me</span>
           <div className="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
         </button>
